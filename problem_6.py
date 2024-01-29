@@ -175,3 +175,10 @@ if __name__ == '__main__':
 
     assert str(union(a, b).aslist()) == str([1, 5, 2, 6, 3, 7, 4, 8]), 'Bad union'
     assert str(intersection(a, b).aslist()) == str([]), 'Bad intersection'
+
+    ## Test Case 4 - union between null and normal
+    a = build_llist([])
+    b = build_llist([5, 6, 7, 8])
+
+    assert str(union(a, b).aslist()) == str([5, 6, 7, 8]), 'Bad union'
+    assert str(intersection(a, b).aslist()) == str([]), 'Bad intersection'
