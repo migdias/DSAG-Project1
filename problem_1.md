@@ -12,3 +12,6 @@ Run time complexity:
     - Remove LRU -> O(1)
 
 -> The overall time complexity therefore O(1)
+
+
+-> The overall space complexity is dominated by the cache itself and the linkedlist to maintain the LRU class. Therefore its O(n) where n is the total number of key-value pairs in the cache

@@ -11,3 +11,5 @@ Traversing the tree is a recursive operation that needs to visit each node once.
 Encoding and Decoding involves searching the tree for a specific node, m times (where m is the length of the string). Therefore its O(m).
 
 Overall, the dominant factor is around the creation of the Huffman tree, which makes it at worst case be O(n log n).
+
+The space complexity if dominated by the space required for the heap (PriorityQueue) and the space needed for storing intermediate results during encoding and decoding. In big-O notation, we can express it as O(n) where n is the length of the input string.
